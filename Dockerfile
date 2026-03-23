@@ -5,7 +5,7 @@ FROM php:8.2-apache
 COPY . /var/www/html/
 
 # Habilita módulos adicionais do Apache (Opcional)
-RUN docker-php-ext-install mysqli pdo pdo_myqul
+RUN docker-php-ext-install mysqli pdo pdo_mysqul
 
 # Exponha a porta padrão do Apache
 EXPOSE 80
